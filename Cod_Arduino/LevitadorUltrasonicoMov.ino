@@ -3,7 +3,7 @@
 #include <avr/power.h>
 
 #define N_PORTS 1 //Numero de puerto con los que se trabaja
-#define N_DIVS 24 //Canatidad de divsiones de la matriz
+#define N_DIVS 24 //Cantidad de divsiones de la matriz
 
 //variables que añaden retrasos en los ciclos de reloj: LOT(mucho retraso), MID(retraso medio), LIT(retraso bajo)
 #define WAIT_LOT(a) __asm__ __volatile__ ("nop"); __asm__ __volatile__ ("nop"); __asm__ __volatile__ ("nop");  __asm__ __volatile__ ("nop"); __asm__ __volatile__ ("nop");__asm__ __volatile__ ("nop"); __asm__ __volatile__ ("nop");__asm__ __volatile__ ("nop"); __asm__ __volatile__ ("nop");  __asm__ __volatile__ ("nop"); __asm__ __volatile__ ("nop");__asm__ __volatile__ ("nop");  __asm__ __volatile__ ("nop");  __asm__ __volatile__ ("nop")
@@ -169,4 +169,5 @@ void setup()
   
 }
 
-void loop(){}
+void loop(){
+// Nothing left to do here :)}
